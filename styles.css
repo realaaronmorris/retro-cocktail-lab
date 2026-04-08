@@ -305,20 +305,13 @@ a {
   justify-content: flex-end;
 }
 
-.hero__image-placeholder {
+.hero__image-photo {
   width: 100%;
   max-width: 500px;
   aspect-ratio: 4/5;
-  background: linear-gradient(135deg, var(--surface-container-high) 0%, var(--surface-container) 100%);
+  object-fit: cover;
   border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--on-surface-variant);
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  display: block;
 }
 
 /* ============================================
@@ -399,14 +392,8 @@ a {
 .card__image {
   width: 100%;
   aspect-ratio: 16/9;
-  background: linear-gradient(135deg, var(--surface-container-high), var(--surface-container));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--on-surface-variant);
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  object-fit: cover;
+  display: block;
 }
 
 .card__body {
@@ -687,7 +674,7 @@ a {
     justify-content: center;
   }
 
-  .hero__image-placeholder {
+  .hero__image-photo {
     max-width: 400px;
   }
 
