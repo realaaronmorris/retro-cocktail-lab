@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sands & Soda — Retro Cocktail Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Sands &amp; Soda</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="label hero__eyebrow">Est. 1962 · Portland, Oregon</span>
+        <h1 class="hero__title">
+          Cocktails Crafted<br />
+          for the <em>Midnight Hour</em>
+        </h1>
+        <p class="hero__subtitle">
+          Where mid-century elegance meets the art of the handcrafted drink.
+          Recipes, stories, and rituals from the golden age of the cocktail lounge.
+        </p>
+        <div class="hero__actions">
+          <a href="#recipes" class="btn btn--primary">Explore Recipes</a>
+          <a href="#reserve" class="btn btn--secondary">Reserve a Table</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__image-placeholder">
+          [ Cocktail Photography ]
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RECIPE SECTION ===================== -->
+  <section class="section section--dark" id="recipes">
+    <div class="container">
+      <span class="label" style="display:block; margin-bottom: 16px;">The Menu</span>
+      <h2 style="margin-bottom: 48px;">House Specialties</h2>
+
+      <div class="recipe-grid">
+
+        <div class="card">
+          <div class="card__image">[ Photography ]</div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="chip">Gin</span>
+              <span class="chip">Stirred</span>
+              <span class="chip">Spirit-Forward</span>
+            </div>
+            <h3 class="card__title">The Desert Sling</h3>
+            <p class="card__description">
+              A sun-drenched riff on the classic Singapore Sling. Hendrick's gin,
+              elderflower, fresh grapefruit, and a whisper of rose water.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">[ Photography ]</div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="chip">Bourbon</span>
+              <span class="chip">Shaken</span>
+              <span class="chip">Smoky</span>
+            </div>
+            <h3 class="card__title">Midnight Manhattan</h3>
+            <p class="card__description">
+              A brooding, barrel-aged Manhattan with a charred oak infusion.
+              Buffalo Trace, sweet vermouth, Angostura, and smoked cherry.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">[ Photography ]</div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="chip">Rum</span>
+              <span class="chip">Blended</span>
+              <span class="chip" style="background: var(--surface-container-high); color: var(--tertiary);">New</span>
+            </div>
+            <h3 class="card__title">Havana Dusk</h3>
+            <p class="card__description">
+              Aged Diplomatico rum, fresh lime, coconut cream, and a float
+              of Angostura bitters. A tropical evening in a glass.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BREAKPOINT DEMO ===================== -->
+  <section class="section breakpoint-demo" id="breakpoints">
+    <div class="container">
+      <span class="label" style="display:block; margin-bottom:16px;">Viewport Demo</span>
+      <h2 style="margin-bottom: 16px;">Responsive Breakpoints</h2>
+      <p style="color: var(--on-surface-variant); margin-bottom: 40px; max-width: 560px;">
+        Resize your browser window to see how layout, typography, and navigation adapt at each breakpoint.
+      </p>
+
+      <div class="breakpoint-indicator">
+        <span class="breakpoint-indicator__dot"></span>
+        <span class="breakpoint-indicator__label" id="activeBreakpoint">Loading...</span>
+      </div>
+
+      <div class="breakpoint-grid">
+        <div class="breakpoint-card breakpoint-card--mobile" id="bpMobile">
+          <h4 class="breakpoint-card__title">Mobile</h4>
+          <p class="breakpoint-card__range">0 — 767px</p>
+          <p class="breakpoint-card__description">
+            Single column layout. Hamburger nav. Full-width cards and form fields.
+          </p>
+        </div>
+        <div class="breakpoint-card breakpoint-card--tablet" id="bpTablet">
+          <h4 class="breakpoint-card__title">Tablet</h4>
+          <p class="breakpoint-card__range">768px — 1024px</p>
+          <p class="breakpoint-card__description">
+            Two-column recipe grid. Centered hero. Stacked form layout.
+          </p>
+        </div>
+        <div class="breakpoint-card breakpoint-card--desktop" id="bpDesktop">
+          <h4 class="breakpoint-card__title">Desktop</h4>
+          <p class="breakpoint-card__range">1025px+</p>
+          <p class="breakpoint-card__description">
+            Full asymmetric two-column hero. Three-column recipe grid. Side-by-side form.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESERVE FORM ===================== -->
+  <section class="section form-section" id="reserve">
+    <div class="container">
+      <div class="form-section__inner">
+
+        <div class="form-section__copy">
+          <span class="label" style="display:block; margin-bottom:16px;">Join Us</span>
+          <h2 class="form-section__heading">Reserve Your Evening</h2>
+          <p class="form-section__subtext">
+            Every table at Sands &amp; Soda is a curated experience. Tell us about
+            your occasion and we'll craft the evening around you.
+          </p>
+          <p style="color: var(--on-surface-variant); font-size: 0.85rem; margin-bottom: 12px;">
+            <span style="color: var(--primary);">✦</span> &nbsp; Tuesday through Sunday, 5pm – 2am
+          </p>
+          <p style="color: var(--on-surface-variant); font-size: 0.85rem;">
+            <span style="color: var(--primary);">✦</span> &nbsp; Dress code: Smart Casual
+          </p>
+        </div>
+
+        <form class="form" id="reserveForm" novalidate>
+
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="e.g. Frank Sinatra"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+              <option value="" disabled selected>Select party size</option>
+              <option value="1">1 — Solo</option>
+              <option value="2">2 — Intimate</option>
+              <option value="3-4">3–4 — Small party</option>
+              <option value="5-6">5–6 — Private group</option>
+              <option value="7+">7+ — Full buyout enquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Special Requests</label>
+            <textarea
+              id="notes"
+              name="notes"
+              placeholder="Occasion, dietary needs, preferred cocktail style..."
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn--primary">Request Reservation</button>
+          </div>
+
+          <p id="formMessage" style="display:none; color: var(--primary); font-size: 0.9rem; margin-top: 8px;"></p>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand">Sands &amp; Soda</div>
+        <p class="footer__tagline">
+          A mid-century cocktail experience.<br />
+          Portland, Oregon · Est. 1962
+        </p>
+      </div>
+      <div>
+        <p class="footer__heading">Explore</p>
+        <ul class="footer__links">
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__heading">Contact</p>
+        <ul class="footer__links">
+          <li><a href="mailto:hello@sandssoda.com">hello@sandssoda.com</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Press Enquiries</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      &copy; 2026 Sands &amp; Soda. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('is-open');
+    });
+
+    // Close nav on link click (mobile)
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('is-open'));
+    });
+
+    // Breakpoint indicator
+    const bpLabel = document.getElementById('activeBreakpoint');
+    const bpMobile  = document.getElementById('bpMobile');
+    const bpTablet  = document.getElementById('bpTablet');
+    const bpDesktop = document.getElementById('bpDesktop');
+
+    function updateBreakpoint() {
+      const w = window.innerWidth;
+      [bpMobile, bpTablet, bpDesktop].forEach(el => el.classList.remove('breakpoint-card--active'));
+
+      if (w < 768) {
+        bpLabel.textContent = `Mobile — ${w}px`;
+        bpMobile.classList.add('breakpoint-card--active');
+      } else if (w <= 1024) {
+        bpLabel.textContent = `Tablet — ${w}px`;
+        bpTablet.classList.add('breakpoint-card--active');
+      } else {
+        bpLabel.textContent = `Desktop — ${w}px`;
+        bpDesktop.classList.add('breakpoint-card--active');
+      }
+    }
+
+    updateBreakpoint();
+    window.addEventListener('resize', updateBreakpoint);
+
+    // Form submission
+    const form = document.getElementById('reserveForm');
+    const formMsg = document.getElementById('formMessage');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('fullName').value.trim();
+      if (!name) {
+        formMsg.textContent = 'Please enter your name.';
+        formMsg.style.color = 'var(--tertiary-container)';
+        formMsg.style.display = 'block';
+        return;
+      }
+      formMsg.textContent = `Thank you, ${name}. Your reservation request has been received. We'll be in touch shortly.`;
+      formMsg.style.color = 'var(--primary)';
+      formMsg.style.display = 'block';
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
